@@ -1,0 +1,57 @@
+.Calc {
+	color: whitesmoke;
+	position: relative;
+	font-weight: bolder;
+	display: grid;
+	grid-template-rows: 100px !important;
+	grid-template-columns: 500px 100%;
+}
+
+.Calc div:first-child {
+	margin-top: 20px;
+	position: relative;
+}
+
+.Calc div:nth-child(2) {
+	width: 60%;
+}
+
+.image {
+	position: relative;
+	width: 50%;
+	max-width: 350px;
+	height: 550px;
+	top: -350px;
+	opacity: 0.5;
+}
+
+.parag {
+	position: relative;
+	top: -320px;
+}
+
+@media (max-width: 991px) {
+	.Calc {
+		grid-template-rows: 80px 500px;
+		grid-template-columns: 100%;
+		margin-top: 90px;
+	}
+
+	.Calc div:first-child {
+		margin-top: 0;
+	}
+
+	.Calc div:nth-child(2) {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.image {
+		top: 50px;
+		width: 55%;
+	}
+
+	.parag {
+		top: 70px;
+	}
+}

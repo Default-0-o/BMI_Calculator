@@ -1,0 +1,72 @@
+* {
+	position: relative;
+	top: 18%;
+}
+
+.Button {
+	position: relative;
+	background: none;
+	background-size: cover;
+	right: 21%;
+	border: 2px solid whitesmoke;
+	border-radius: 7px;
+	padding: 9px 0px;
+}
+
+.Button span {
+	position: relative;
+	top: -0.2px;
+	font-size: 18px;
+	font-weight: 600;
+	background-color: transparent;
+	color: whitesmoke;
+	padding: 1.4vh 3.8vw;
+	border-radius: 5px;
+	mix-blend-mode: screen;
+	z-index: 100;
+}
+
+.Button span:hover {
+	background-color: whitesmoke;
+	color: black;
+	mix-blend-mode: screen;
+}
+
+.Button span:active {
+	background-color: rgba(245, 245, 245, 0.7);
+	color: black;
+	mix-blend-mode: screen;
+}
+
+.Button:active {
+	border: 2px solid rgba(245, 245, 245, 0.7);
+}
+
+@media (min-width: 1200px) {
+	.Button {
+		right: 25%;
+	}
+}
+
+@media (max-width: 991px) {
+	* {
+		top: -5%;
+	}
+
+	.Button {
+		right: 0%;
+		margin-top: 60px;
+	}
+
+	.Button span {
+		top: 0.3px;
+		padding: 1.4vh 6vw;
+		width: 20%;
+	}
+}
+
+@media (max-width: 445px) {
+	.Button {
+		margin-top: 90px;
+	}
+}

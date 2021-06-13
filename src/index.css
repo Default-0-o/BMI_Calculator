@@ -1,13 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+	/* height: 80%; */
+	/* position: relative; */
+	/* top: -1000px; */
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	margin: 0;
+	font-family: "Varela Round", sans-serif, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-y: hidden;
+
+	background: linear-gradient(
+		45deg,
+		rgba(12, 190, 230, 0.987),
+		rgba(11, 169, 204, 0.987),
+		rgba(7, 127, 192, 0.987),
+		rgba(6, 109, 165, 0.987),
+		rgba(6, 75, 165, 0.987),
+		rgba(3, 60, 134, 0.987),
+		rgba(2, 44, 134, 0.987),
+		rgba(1, 27, 110, 0.987),
+		rgba(1, 8, 99, 0.987),
+		rgba(22, 2, 114, 0.987),
+		rgba(9, 1, 87, 0.987)
+	);
+	background-size: 10000%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+@media (max-width: 991px) {
+	body {
+		overflow-y: auto;
+	}
 }

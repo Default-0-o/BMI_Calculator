@@ -1,0 +1,12 @@
+.Link {
+	color: whitesmoke;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	z-index: 100;
+}
+
+.Link:hover {
+	color: whitesmoke;
+	text-decoration: underline;
+}

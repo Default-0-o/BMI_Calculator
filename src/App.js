@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
+import classes from "./App.module.css";
+import Calculator from "./containers/Calculator/Calculator";
+import Welcome from "./containers/Welcome/Welcome";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+	render() {
+		return (
+			<div className={classes.App}>
+				<Switch>
+					<Route path="/calculator" component={Calculator} />
+					<Route path="/auth" />
+					<Route path="/profile" />
+					<Route path="/" exact component={Welcome} />
+				</Switch>
+
+				<ul class={classes.circles}>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		);
+	}
 }
 
 export default App;
