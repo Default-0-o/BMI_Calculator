@@ -1,3 +1,20 @@
+before all the "create=-react-app" thing ...
+
+its my second project using react.js
+
+I used react-router even though it wasn't really necessary :D
+
+any kind of tips is apperciated !
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
